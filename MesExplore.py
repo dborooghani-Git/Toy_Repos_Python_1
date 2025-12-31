@@ -7,15 +7,15 @@ import pandas as pd
 if name == "main":
    output_table = '/scratch/dborooghani/data/2025_09_thomason/output_table.csv'
    DATA_PATH_PINC_BIDS = '/scratch/dborooghani/data/2025_09_thomason/PINC'
-    sequence_types_out = ["T2haste4prompts", "T2hasteTR1100"]
-    anat_folder = "anat"
+   sequence_types_out = ["T2haste4prompts", "T2hasteTR1100"]
+   anat_folder = "anat"
 
 # retrieve subjects
 subjects_i = os.listdir(DATA_PATH_PINC_BIDS)
 subjects = list()
 for s in subjects_i:
     if os.path.isdir(os.path.join(DATA_PATH_PINC_BIDS, s)):
-        subjects.append(s)
+       subjects.append(s)
 print(subjects)
 # retrieve sessions and data
 rows = list()
