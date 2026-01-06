@@ -4,7 +4,7 @@ import os
 import sys
 import pandas as pd
 
-if name == "main":
+if __name__ == "__main__":
    output_table = '/scratch/dborooghani/data/2025_09_thomason/output_table.csv'
    DATA_PATH_PINC_BIDS = '/scratch/dborooghani/data/2025_09_thomason/PINC'
    sequence_types_out = ["T2haste4prompts", "T2hasteTR1100"]
@@ -41,3 +41,4 @@ for row in rows:
     print(row)
 df = pd.DataFrame(rows, columns=columns)
 df.to_csv(output_table, index=False)
+
