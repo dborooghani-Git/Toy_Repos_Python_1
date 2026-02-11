@@ -5,8 +5,8 @@ import sys
 import pandas as pd
 
 if __name__ == "__main__":
-   output_table = '/scratch/dborooghani/data/2025_09_thomason/output_table.csv'
-   DATA_PATH_PINC_BIDS = '/scratch/dborooghani/data/2025_09_thomason/PINC'
+   output_table = 'Table path/output_table.csv'
+   DATA_PATH_PINC_BIDS = 'Data path/PINC'
    sequence_types_out = ["T2haste4prompts", "T2hasteTR1100"]
    anat_folder = "anat"
 
